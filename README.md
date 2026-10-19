@@ -13,6 +13,12 @@ Each project is a folder containing:
 - `plan.md` — how, step by step
 - `roadmap.md` — when, in order
 
+Start a new project by copying `_template/`:
+
+```sh
+cp -r _template big-potato/my-project
+```
+
 ## Index
 
 | Project | Size | Status |
