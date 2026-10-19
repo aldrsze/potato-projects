@@ -23,4 +23,4 @@ cp -r _template big-potato/my-project
 
 | Project | Size | Status |
 | --- | --- | --- |
-| _none yet_ | | |
+| [evently](big-potato/evently) | big | planning |
