@@ -24,3 +24,4 @@ cp -r _template big-potato/my-project
 | Project | Size | Status |
 | --- | --- | --- |
 | [evently](big-potato/evently) | big | planning |
+| [java-chess](small-potato/java-chess) | small | planning |
