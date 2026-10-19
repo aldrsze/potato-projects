@@ -1,5 +1,7 @@
 # Plan — Evently
 
+Stack: C# / .NET Windows Forms · MySQL 8.x (raw SQL, `MySqlConnector`) · Google Forms/Drive/Sheets APIs (OAuth2) · `QRCoder` · `ZXing.Net` + `OpenCvSharp4` · `MailKit` · `CsvHelper` · `BCrypt.Net-Next` · `ScottPlot`
+
 ## Steps
 
 1. MySQL schema (`Schema.sql`): User, Event, Organizer, Ticket, Announcement, Review + constraints and indexes.
@@ -15,6 +17,15 @@
 11. Dashboard: async polling queries, ScottPlot charts, role visibility.
 12. Reports: attendance and review CSV export.
 13. Reviews: review form generation, request email to checked-in attendees, response sync.
+
+## Risks / unknowns
+
+- Google Forms/Gmail scopes are sensitive → app runs in Google "Testing" mode with test users; public distribution needs OAuth verification.
+- Google Forms API can't reliably close a form on its own → capacity enforced in MySQL, sync/import report skips.
+- Webcam detection varies by machine (must verify on Windows 10 and 11).
+- Review form asks for email (no Google sign-in) → someone could submit for another attendee; accepted for local/school use.
+- Scheduled emails only send while the app is running; overdue ones sent on next launch.
+- No automated tests → everything verified manually.
 
 ## Notes
 
