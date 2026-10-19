@@ -1,5 +1,7 @@
 # Roadmap — Project Name
 
-| # | Milestone | Status |
-| --- | --- | --- |
-| 1 | ... | todo |
+| # | Milestone | Status | Done |
+| --- | --- | --- | --- |
+| 1 | ... | todo | |
+
+Next up: ...
